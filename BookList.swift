@@ -8,6 +8,7 @@
 import Foundation
 
 func booklist(){
+    print("📚BOOK SECTIONS:")
     for j in booksection {
         print(j)}
 
@@ -119,13 +120,13 @@ func booklist(){
                 for i in booksstory{
                     print(i)}
                 // BOOK INFORMATIONS
-                print("-Choose a book by entering on of the capital letter")
+                 print("-Choose a book by entering on of the capital letter")
                 let m = Tils.readString()
                 if m  == "A"{
                     bookliterature.booknames()
                     bookliterature.available()}
                  else {
-                print("-there is no section or book. Check how you writing of the letter.")
+                 print("-there is no section or book. Check how you writing of the letter.")
                      booklist()}
             default:
               
