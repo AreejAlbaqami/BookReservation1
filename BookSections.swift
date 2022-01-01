@@ -24,9 +24,10 @@ class BInformations {
 // PRINT BOOK NAME AND INFORMATIONS
     func booknames(){
  
-
+       
         print("______________________________📚",bookname,"📚_______________________________")
          print (bookinfo)
+   
     }
     //_______________________________________________________________________________________________________________
     // THE BOOK IS AVALIABLE FOR RESERVATION OR NOT
@@ -34,7 +35,9 @@ class BInformations {
         
         if bookthebook == false
         {print("-this book is unavailable 🟥")
-            booklist()
+            print("Do you want to go back to the book section? yes or no?")
+            if Tils.readString() == "yes"{
+                booklist()}
         }
         else if bookthebook == true{
                     print("-this book is available 🟩")
